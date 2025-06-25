@@ -2,7 +2,7 @@ services:
 - type: web
   name: typesense
   env: docker
-  repo: https://github.com/hmbrg/typesense-on-render.git
+  repo: https://github.com/viking2917/typesense-on-render.git
   plan: starter
   healthCheckPath: /health
   disk:
