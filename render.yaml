@@ -10,6 +10,8 @@ services:
     mountPath: /typesense-data
     sizeGB: 1  
   envVars:
+  - key: TYPESENSE_API_KEY
+    generateValue: true  
   - key: TYPESENSE_DATA_DIR
     value: /typesense-data
   - key: TYPESENSE_ENABLE_CORS
