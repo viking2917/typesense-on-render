@@ -4,7 +4,7 @@ FROM typesense/typesense:26.0
 RUN echo '#!/bin/bash\nmkdir -p /tmp/typesense-data\nexec /opt/typesense-server "$@"' > /start.sh && chmod +x /start.sh
 
 # Expose port that Render expects
-EXPOSE $PORT
+EXPOSE 8108
 
 # Use the startup script
 ENTRYPOINT ["/start.sh"]
