@@ -1,10 +1,11 @@
 FROM typesense/typesense:26.0
 
-# Create data directory in tmp (ephemeral storage)
-RUN mkdir -p /tmp/typesense-data
+# Create a startup script
+RUN echo '#!/bin/bash\nmkdir -p /tmp/typesense-data\nexec /opt/typesense-server "$@"' > /start.sh && chmod +x /start.sh
 
 # Expose port 8108
 EXPOSE 8108
 
-# Start Typesense with configuration for free tier
+# Use the startup script
+ENTRYPOINT ["/start.sh"]
 CMD ["--data-dir", "/tmp/typesense-data", "--api-key", "${TYPESENSE_API_KEY}", "--enable-cors"]
