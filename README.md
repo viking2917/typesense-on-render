@@ -5,6 +5,28 @@ Deploy [Typesense](https://typesense.org/) on [Render.com](https://render.com)
 
 ## Setup
 
+### Environment variables on Render.com:
+
+
+Key: HOST
+Value: 0.0.0.0
+
+Key: PORT
+Value: 8108
+
+Key: TYPESENSE_API_KEY
+Value: <a randomly generated key>
+
+Key: TYPESENSE_DATA_DIR
+Value: /tmp/typesense-data
+
+Key: TYPESENSE_ENABLE_CORS
+Value: true
+
+(note the current Dockerfile uses hardcoded, not env variables, but result should be the same
+
+### more background
+
 This forked from [https://github.com/hmbrg/typesense-on-render](https://github.com/hmbrg/typesense-on-render)
 
 I had to tweak the setup, e.g. 
