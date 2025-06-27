@@ -7,6 +7,6 @@ services:
   healthCheckPath: /health
   envVars:
   - key: TYPESENSE_DATA_DIR
-    value: /tmp/typesense-data
+    value: /tmp
   - key: TYPESENSE_ENABLE_CORS
     value: true
