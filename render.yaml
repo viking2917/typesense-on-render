@@ -6,8 +6,6 @@ services:
   plan: free
   healthCheckPath: /health
   envVars:
-  - key: TYPESENSE_API_KEY
-    generateValue: true
   - key: TYPESENSE_DATA_DIR
     value: /tmp/typesense-data
   - key: TYPESENSE_ENABLE_CORS
