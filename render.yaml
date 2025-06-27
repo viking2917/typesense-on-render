@@ -6,8 +6,6 @@ services:
     plan: free
     region: oregon
     envVars:
-      - key: TYPESENSE_API_KEY
-        generateValue: true
       - key: PORT
         value: "8108"
       - key: TYPESENSE_DATA_DIR
