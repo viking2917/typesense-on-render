@@ -3,7 +3,7 @@ services:
     name: typesense
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: free
+    plan: starter
     region: oregon
     envVars:
       - key: PORT
