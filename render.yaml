@@ -13,5 +13,5 @@ services:
       - key: PORT
         value: "8108"
       - key: TYPESENSE_API_KEY
-        value: 016ad8800a0e24aa3ab8b9672060d4e7    
+        generateValue: true    
     healthCheckPath: /health
