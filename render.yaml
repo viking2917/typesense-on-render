@@ -5,6 +5,10 @@ services:
     dockerfilePath: ./Dockerfile
     plan: starter
     region: oregon
+    disk:
+      name: typesense-data
+      mountPath: /typesense-data
+      sizeGB: 1      
     envVars:
       - key: PORT
         value: "8108"
