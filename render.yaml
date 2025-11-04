@@ -3,7 +3,7 @@ services:
     name: typesense
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: starter
+    plan: free
     region: oregon
     disk:
       name: typesense-data
